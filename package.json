@@ -1,0 +1,35 @@
+{
+	"name": "benchmark-guid",
+	"description": "Benchmark various guids",
+	"version": "0.0.1",
+	"author": "Aaron Cohen <aarondcohen@gmail.com>",
+	"license": "MIT",
+	"main": "benchmark.js",
+	"homepage": "https://github.com/aarondcohen/benchmark-guid#benchmark-guid",
+	"respository": {
+		"type": "git",
+		"url": "git+https://github.com/aarondcohen/benchmark-guid.git"
+	},
+	"bugs": {
+		"url": "https://github.com/aarondcohen/benchmark-guid/issues"
+	},
+	"scripts": {
+		"benchmark": "matcha benchmark.js"
+	},
+	"engines": {
+		"node": ">=v6.9.0"
+	},
+	"devDependencies": {
+		"cuid": "*",
+		"id128": "*",
+		"ksuid": "*",
+		"matcha": "*",
+		"nanoid": "*",
+		"ulid": "*",
+		"uuid": "*",
+		"uuid-1345": "*",
+		"uuid-random": "*",
+		"uuid4": "*",
+		"uuidjs": "*"
+	}
+}
