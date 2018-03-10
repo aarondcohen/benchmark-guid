@@ -29,6 +29,7 @@
 		"uuid": "*",
 		"uuid-1345": "*",
 		"uuid-random": "*",
+		"uuid-with-v6": "*",
 		"uuid4": "*",
 		"uuidjs": "*"
 	}
