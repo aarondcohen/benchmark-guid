@@ -1,7 +1,7 @@
 {
 	"name": "benchmark-guid",
 	"description": "Benchmark various guids",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"author": "Aaron Cohen <aarondcohen@gmail.com>",
 	"license": "MIT",
 	"main": "benchmark.js",
@@ -14,16 +14,16 @@
 		"url": "https://github.com/aarondcohen/benchmark-guid/issues"
 	},
 	"scripts": {
-		"benchmark": "matcha benchmark.js"
+		"benchmark": "node benchmark.js"
 	},
 	"engines": {
 		"node": ">=v6.9.0"
 	},
 	"devDependencies": {
+		"benchmarkify": "*",
 		"cuid": "*",
 		"id128": "*",
 		"ksuid": "*",
-		"matcha": "*",
 		"nanoid": "*",
 		"ulid": "*",
 		"uuid": "*",
