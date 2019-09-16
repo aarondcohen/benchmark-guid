@@ -95,6 +95,9 @@ suite.add('Uuidv6', function() {
 	tmp = uuidV6();
 });
 suite.add('UuidRandom', function() {
+	tmp = UuidRandom.bin();
+});
+suite.add('UuidRandom Canonical', function() {
 	tmp = UuidRandom();
 });
 suite.add('Uuid4', function() {
