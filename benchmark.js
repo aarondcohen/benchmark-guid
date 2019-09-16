@@ -21,7 +21,7 @@ const UuidJs = require('uuidjs');
 
 let tmp;
 
-const suite = new Benchmarkify().createSuite('Competitors');
+const suite = new Benchmarkify('GUIDs').printHeader().createSuite('Competitors');
 suite.add('Id128.Ulid', function() {
 	tmp = Id128Ulid.generate();
 });
