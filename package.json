@@ -20,7 +20,7 @@
 		"node": ">=v6.9.0"
 	},
 	"devDependencies": {
-		"benchmarkify": "*",
+		"benchmarkify": "github:aarondcohen/benchmarkify",
 		"cuid": "*",
 		"id128": "*",
 		"ksuid": "*",

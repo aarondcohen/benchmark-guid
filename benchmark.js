@@ -1,4 +1,5 @@
 const Benchmarkify = require("benchmarkify");
+
 const {
 	Ulid: Id128Ulid,
 	UlidMonotonic: Id128UlidMonotonic,
@@ -9,10 +10,12 @@ const {
 } = require('id128');
 const Cuid = require('cuid');
 const Ksuid = require('ksuid');
-const Nanoid = require('nanoid');
+const { nanoid: Nanoid } = require('nanoid');
 const Ulid = require('ulid');
-const Uuidv1 = require('uuid/v1');
-const Uuidv4 = require('uuid/v4');
+const {
+	v1: Uuidv1,
+	v4: Uuidv4,
+} = require('uuid');
 const Uuidv6 = require('uuid-with-v6');
 const UuidRandom = require('uuid-random');
 const Uuid1345 = require('uuid-1345');
@@ -28,11 +31,17 @@ suite.add('Id128.Ulid', function() {
 suite.add('Id128.Ulid Canonical', function() {
 	tmp = Id128Ulid.generate().toCanonical();
 });
+suite.add('Id128.Ulid Raw', function() {
+	tmp = Id128Ulid.generate().toRaw();
+});
 suite.add('Id128.UlidMonotonic', function() {
 	tmp = Id128UlidMonotonic.generate();
 });
 suite.add('Id128.UlidMonotonic Canonical', function() {
 	tmp = Id128UlidMonotonic.generate().toCanonical();
+});
+suite.add('Id128.UlidMonotonic Raw', function() {
+	tmp = Id128UlidMonotonic.generate().toRaw();
 });
 suite.add('Id128.Uuid1', function() {
 	tmp = Id128Uuid1.generate();
